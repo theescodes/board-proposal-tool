@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@source "../../svelte-components/src";
+
+@theme {
+  --color-primary: oklch(0.55 0.15 250);
+  --color-primary-light: oklch(0.70 0.12 250);
+  --color-primary-dark: oklch(0.40 0.18 250);
+  --color-success: oklch(0.65 0.15 145);
+  --color-warning: oklch(0.75 0.15 85);
+  --color-danger: oklch(0.60 0.20 25);
+}

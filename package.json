@@ -1,0 +1,13 @@
+{
+  "name": "board-proposal-tool",
+  "private": true,
+  "scripts": {
+    "build:svelte": "cd svelte-components && npm run build",
+    "copy:svelte": "mkdir -p angular-host/src/assets/svelte && cp svelte-components/dist/board-proposal-components.js angular-host/src/assets/svelte/",
+    "build:angular": "cd angular-host && npx ng build",
+    "build": "npm run build:svelte && npm run copy:svelte && npm run build:angular",
+    "dev:svelte:watch": "cd svelte-components && npx vite build --watch",
+    "dev:angular": "cd angular-host && npx ng serve",
+    "dev": "npm run build:svelte && npm run copy:svelte && npm run dev:angular"
+  }
+}
